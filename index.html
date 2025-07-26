@@ -2,120 +2,117 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SQD Technologies</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>StateQ Dynamics</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" />
 </head>
 
 <body>
+    <div id="scroll-progress" aria-hidden="true"></div>
 
-    <!-- NAVBAR -->
-    <header class="glass-navbar">
-        <div class="container nav-inner">
-            <div class="logo">
-                <img src="assets/Navigation.svg" alt="SQD Logo" style="width: 60px; height: auto;">
+    <!-- Preloader -->
+    <div id="preloader" role="status" aria-live="polite" aria-label="Loading">
+        <div class="loader">
+            <div class="spinner" aria-hidden="true"></div>
+            <span>Loading…</span>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="glass-navbar" aria-label="Primary">
+        <div class="nav-inner">
+            <img class="logo" src="./assets/Navigation.svg" alt="StateQ Dynamics Logo" style="width: 60px;" />
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero-section">
+        <div class="container hero-content" data-reveal>
+            <img src="./assets/Navigation.svg" style="width: 350px;" alt="StateQ Logo" />
+            <h1 class="glow">StateQ Dynamics Pvt. Ltd.</h1>
+            <p id="tagline" style="height: 30px;" class="typewriter"></p>
+            <p>Transforming Industries with Cutting-Edge Technologies is a deep-tech startup incubated at the Technology
+                Innovation Foundation of IIT Palakkad (TECHIN).</p>
+            <div class="hero-ctas">
+                <a href="#contact" class="btn-outline" data-scroll>Founders</a>
             </div>
-            <nav class="nav-links">
-                <a href="#about" class="btn">About Us</a>
-            </nav>
+            <div class="scroll-down">&#8595;</div>
         </div>
     </header>
 
-    <!-- HERO SECTION -->
-    <section class="hero-section">
-        <div class="hero-content">
-            <h1><span class="glow">StateQ Dynamics Pvt. Ltd</span></h1>
-            <p>StateQ helps you visualize, simulate, and control complex systems using digital twins, robotics, and
-                intelligent SDR technology.</p>
-        </div>
-    </section>
-    <!-- ABOUT SECTION -->
+    <!-- About -->
     <section id="about" class="about-section">
-        <div class="container">
-            <h2>About Us</h2>
-            <p>
-                <strong>StateQ Dynamics Pvt. Ltd.</strong> is a deep-tech startup incubated at the Technology Innovation
-                Foundation of IIT Palakkad (TECHIN). We are committed to developing cutting-edge solutions in the
-                domains of robotic systems, digital twins, and SDR-based transceiver systems.
-            </p>
-            <p>
-                With a focus on innovation and real-world impact, our technologies are engineered to bridge the gap
-                between physical systems and their virtual counterparts, enabling smarter, more efficient, and adaptive
-                automation solutions.
-            </p>
-
-            <h3 style="margin-top: 2rem;">Our Vision</h3>
-            <p>
-                To pioneer intelligent, scalable systems that power the future of automation, communication, and
-                simulation.
-            </p>
-            <p style="margin-top: 2rem; color: #bbb; max-width: 800px; margin-inline: auto;">
-                We believe in combining academic excellence with hands-on engineering to solve complex challenges and
-                empower industries with next-generation technologies.
-            </p>
+        <div class="container" data-reveal>
+            <h2 class="section-title">About Us</h2>
+            <p class="section-desc">With a focus on innovation and real-world impact, our technologies are engineered to
+                bridge the gap between physical systems and their virtual counterparts, enabling smarter, more
+                efficient, and adaptive automation solutions.</p>
+            <h3 class="section-title">Our Vision</h3>
+            <p class="section-desc">To pioneer intelligent, scalable systems that power the future of automation,
+                communication, and simulation.</p>
         </div>
     </section>
 
-    <!-- FOUNDERS SECTION -->
-    <section class="founders-section" id="founders">
-        <div class="container">
-            <h2>Our Founders</h2>
-            <div class="founder-cards">
-                <article class="card">
-                    <header class="card__hero-header">
-                        <img src="assets/one.jpeg" alt="Dr. Shaikshavali Chitraganti" class="card__icon">
-                    </header>
-                    <p class="card__job-title">Dr. Shaikshavali Chitraganti</p>
-                    <p class="card__linkedin-link">
-                        <a href="https://www.linkedin.com/in/shaikshavali-c-a5886418/"> <img src="assets/link.png"
-                                alt="LinkedIn Logo" style="width: 25px; height: auto;">
-                        </a>
-                    </p>
-                </article>
-                <article class="card">
-                    <header class="card__hero-header">
-                        <img src="assets/three.jpeg" alt="Nandagopan Kalathil" class="card__icon">
-                    </header>
-                    <p class="card__job-title">Mr. Nandagopan <br> Kalathil</p>
-                    <p class="card__linkedin-link">
-                        <a href="https://www.linkedin.com/in/nandagopan-kalathil/"> <img src="assets/link.png"
-                                alt="LinkedIn Logo" style="width: 25px; height: auto;">
-                        </a>
-                    </p>
-                </article>
-                <article class="card">
-                    <header class="card__hero-header">
-                        <img src="assets/two.jpeg" alt="Mr. Aneesh Swaminathan" class="card__icon">
-                    </header>
-                    <p class="card__job-title">Mr. Aneesh Swaminathan</p>
-                    <p class="card__linkedin-link">
-                        <a href="https://www.linkedin.com/in/aneesh-swaminathan/"> <img src="assets/link.png"
-                                alt="LinkedIn Logo" style="width: 25px; height: auto;">
-                        </a>
-                    </p>
-                </article>
 
+    <!-- Founders Section -->
+    <section id="contact" class="contact-section">
+        <div class="container" data-reveal>
+            <div class="cta">
+                <section id="founders" class="founders-section">
+                    <div class="container" data-reveal>
+                        <h2 class="section-title">Meet the Founders</h2>
+                        <div class="founder-cards">
+
+                            <a href="https://www.linkedin.com/in/nandagopan-kalathil/" target="_blank"
+                                rel="noopener noreferrer">
+                                <div class="card">
+                                    <div class="card__hero-header"><img src="./assets/three.jpeg"
+                                            alt="Mr. Nandagopan Kalathil" loading="lazy"></div>
+                                    <h3>Mr. Nandagopan Kalathil</h3>
+                                </div>
+                            </a>
+
+                            <a href="https://www.linkedin.com/in/shaikshavali-c-a5886418/" target="_blank"
+                                rel="noopener noreferrer">
+                                <div class="card">
+                                    <div class="card__hero-header"><img src="./assets/one.jpeg"
+                                            alt="Dr. Shaikshavali Chitraganti" loading="lazy"></div>
+                                    <h3>Dr. Shaikshavali Chitraganti</h3>
+                                </div>
+                            </a>
+
+                            <a href="https://www.linkedin.com/in/aneesh-swaminathan/" target="_blank"
+                                rel="noopener noreferrer">
+                                <div class="card">
+                                    <div class="card__hero-header"><img src="./assets/two.jpeg"
+                                            alt="Mr. Aneesh Swaminathan" loading="lazy"></div>
+                                    <h3>Mr. Aneesh Swaminathan</h3>
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+                </section>
             </div>
-
-
         </div>
     </section>
-    <footer class="footer-v2">
-        <!-- <div class="footer-container">
-            <div class="footer-column">
-                <img src="assets/SQD.svg" alt="SQD Logo" style="width: 220px; height: auto; display: block; margin: 0 auto;">
-            </div>
-        </div> -->
-        <div class="footer-bottom">
-            <hr style="border: none; border-top: 1px solid #ccc; margin: 2rem 0;">
-            <p>Address: 123 Main St, Anytown, USA</p>
-            <p>Phone: +1 (555) 555-5555</p>
-        </div>
+
+    <!-- Footer -->
+    <footer>
+        <img src="./assets/Navigation.svg" alt="Logo" style="width: 50px;">
+        <p>StateQ Dynamics Pvt. Ltd.</p>
+        <div class="license">© <span id="year"></span> All rights reserved.</div>
     </footer>
 
+    <!-- Back to Top -->
+    <button id="backToTop" aria-label="Back to top" title="Back to top">&#8679;</button>
 
-    <script src="script.js"></script>
+    <!-- External Script -->
+    <script src="main.js"></script>
 </body>
 
 </html>
